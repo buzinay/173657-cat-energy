@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юлия Бузина](https://up.htmlacademy.ru/adaptive/13/user/173657).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
