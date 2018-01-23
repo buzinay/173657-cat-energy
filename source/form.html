@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кэт-энерджи. Подбор программы</title>
+</head>
+<body>
+  <header class="page-header">
+    <a class="main-nav__logo logo" href="#">Логотип "Кэт-энерджи"
+      <svg class="logo__svg-image" width="33" height="38"></svg>
+      <svg class="logo__svg-title" width="101" height="18"></svg>
+    </a>
+    <nav class="page-header__nav main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--active">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+    <section class="page-header__content header-content">
+      <h1 class="header-content__title">Подбор программы</h1>
+    </section>
+  </header>
+  <main>
+    <section class="selection">
+      <h2 class="visually-hidden">Форма обратной связи для подбора программы питания вашего котика</h2>
+      <p class="selection__caption">Заполните анкету и мы подберем  программу питания для вашего котика</p>
+      <form class="selection__form form" name="selection" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form__fieldset form__fieldset--cat-info">
+          <p class="form__row">
+            <label class="form__label form__label--input" for="nickname-id">Имя:<sub>*</sub></label>
+            <input class = "form__field" type="text" name="nickname" id="nickname-id" placeholder="Барсик" required>
+          </p>
+          <p class="form__row">
+            <label class="form__label form__label--input" for="weight-id">Вес (кг):<sub>*</sub></label>
+            <input class = "form__field" type="text" name="weight" id="weight-id" placeholder="7">
+          </p>
+          <p class="form__row">
+            <label class="form__label form__label--input" for="age-id">Возраст (лет):</label>
+            <input class = "form__field" type="text" name="age" id="age-id" placeholder="7">
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--radio-group">
+          <p class="form__row">
+            <input class="form__radio" type="radio" name="slimming" id="slimming-id" value="slimming" checked>
+            <label class="form__label" for="slimming-id">Похудение</label>
+          </p>
+          <p class="form__row">
+            <input class="form__radio" type="radio" name="weight_gain" id="weight_gain-id" value="weight_gain">
+            <label class="form__label" for="weight_gain-id">Набор массы</label>
+          </p>
+          <p class="form__row">
+            <input class="form__radio" type="radio" name="recommendation" id="recommendation-id" value="recommendation">
+            <label class="form__label" for="recommendation-id">Не знаю (Нужен ваш совет)</label>
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--contacts">
+          <h3 class="form__legend">Контактные данные (владельца кота)</h3>
+          <p class="form__row form__row--email">
+            <label class="form__label form__label--input" for="email-id">E-mail:<sub>*</sub></label>
+            <input class="form__field" type="email" name="email" id="email-id" placeholder="kuklachev@gmail.com" required>
+          </p>
+          <p class="form__row form__row--phone">
+            <label class="form__label form__label--input" for="phone-id">Телефон<sub>*</sub></label>
+            <input class="form__field" type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90">
+          </p>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--message">
+          <h3 class="form__legend">Комментарий</h3>
+          <textarea class="form__textarea" name="message" id="message-id" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--check-group">
+          <h3 class="form__legend">Дополнительно</h3>
+          <p class="form__row">
+            <input class="form__checkbox" type="checkbox" name="sweetener" id="sweetener-id" checked>
+            <label class="form__label" for="sweetener-id">Сахарозаменитель</label>
+          </p>
+          <p class="form__row">
+            <input class="form__checkbox" type="checkbox" name="water" id="water-id">
+            <label class="form__label" for="water-id">Питьевая вода</label>
+          </p>
+          <p class="form__row">
+            <input class="form__checkbox" type="checkbox" name="milk" id="milk-id">
+            <label class="form__label" for="milk-id">Молоко</label>
+          </p>
+          <p class="form__row">
+            <input class="form__checkbox" type="checkbox" name="vitamins" id="vitamins-id">
+            <label class="form__label" for="vitamins-id">Витамины</label>
+          </p>
+        </fieldset>
+        <p class="form__row form__row--submit-group">
+          <button class="form__button btn btn--form" type="submit">Отправить заявку</button>
+          <small class="form__note">* — обязательные поля</small>
+        </p>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo logo" href="#">
+        <svg class="logo__svg-title" width="128" height="24">
+        </svg>
+      </a>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__svg social__svg--vk" width="22" height="12">
+            </svg>ВКонтакте
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__svg social__svg--insta" width="16" height="16">
+            </svg>Инстаграм
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <svg class="social__svg social__svg--facebook" width="12" height="20">
+            </svg>Фейсбук
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__author">HTML Academy</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__svg" width="27" height="34">
+          </svg>
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
