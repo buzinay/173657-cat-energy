@@ -26,8 +26,8 @@
   text-transform: uppercase;
   color: @base-black-text-color;
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -44,14 +44,14 @@
 
 .categories__title--slim {
   &::after {
-    position: absolute;
     content: "";
+    position: absolute;
     left: 10px;
     top: -5px;
     width: 35px;
     height: 50px;
 
-    background-image: url('../img/bg-cat-slim.svg');
+    background-image: url("../img/bg-cat-slim.svg");
     background-repeat: no-repeat;
     background-size: 35px 49px;
   }
@@ -59,8 +59,8 @@
 
 .categories__title--pro {
   &::after {
-    position: absolute;
     content: "";
+    position: absolute;
     left: -10px;
     top: 10px;
     width: 67px;
