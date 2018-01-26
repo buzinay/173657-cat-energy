@@ -7,7 +7,7 @@
     "autoprefixer": "7.2.x",
     "browser-sync": "2.23.x",
     "gulp": "3.9.x",
-    "gulp-less": "3.4.x",
+    "gulp-less": "^3.4.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "7.0.x",
     "@htmlacademy/editorconfig-cli": "1.x",
