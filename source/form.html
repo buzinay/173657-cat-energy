@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
   <title>Кэт-энерджи. Подбор программы</title>
 </head>
 <body>
   <header class="page-header">
-    <a class="main-nav__logo logo" href="#">Логотип "Кэт-энерджи"
-      <svg class="logo__svg-image" width="33" height="38"></svg>
-      <svg class="logo__svg-title" width="101" height="18"></svg>
-    </a>
     <nav class="page-header__nav main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__logo-wrapper">
+        <a class="main-nav__logo logo" href="#">Логотип "Кэт энерджи"
+          <svg class="logo__svg-image" width="33" height="38"></svg>
+          <svg class="logo__svg-title" width="101" height="18"></svg>
+        </a>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+      </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
@@ -21,12 +24,12 @@
           <a class="site-list__link" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a class="site-list__link site-list__link--active">Подбор программы</a>
+          <a class="site-list__link">Подбор программы</a>
         </li>
       </ul>
     </nav>
-    <section class="page-header__content header-content">
-      <h1 class="header-content__title">Подбор программы</h1>
+    <section class="page-header__content">
+      <h1 class="page-header__title">Подбор программы</h1>
     </section>
   </header>
   <main>
@@ -36,11 +39,11 @@
       <form class="selection__form form" name="selection" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__fieldset form__fieldset--cat-info">
           <p class="form__row">
-            <label class="form__label form__label--input" for="nickname-id">Имя:<sub>*</sub></label>
+            <label class="form__label form__label--input" for="nickname-id">Имя:*</label>
             <input class = "form__field" type="text" name="nickname" id="nickname-id" placeholder="Барсик" required>
           </p>
           <p class="form__row">
-            <label class="form__label form__label--input" for="weight-id">Вес (кг):<sub>*</sub></label>
+            <label class="form__label form__label--input" for="weight-id">Вес (кг):*</label>
             <input class = "form__field" type="text" name="weight" id="weight-id" placeholder="7">
           </p>
           <p class="form__row">
@@ -50,26 +53,26 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--radio-group">
           <p class="form__row">
-            <input class="form__radio" type="radio" name="slimming" id="slimming-id" value="slimming" checked>
+            <input class="form__radio" type="radio" name="radio" id="slimming-id" value="slimming" checked>
             <label class="form__label" for="slimming-id">Похудение</label>
           </p>
           <p class="form__row">
-            <input class="form__radio" type="radio" name="weight_gain" id="weight_gain-id" value="weight_gain">
+            <input class="form__radio" type="radio" name="radio" id="weight_gain-id" value="weight_gain">
             <label class="form__label" for="weight_gain-id">Набор массы</label>
           </p>
           <p class="form__row">
-            <input class="form__radio" type="radio" name="recommendation" id="recommendation-id" value="recommendation">
+            <input class="form__radio" type="radio" name="radio" id="recommendation-id" value="recommendation">
             <label class="form__label" for="recommendation-id">Не знаю (Нужен ваш совет)</label>
           </p>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--contacts">
-          <h3 class="form__legend">Контактные данные (владельца кота)</h3>
+          <h3 class="form__legend form__legend--contacts">Контактные данные (владельца кота)</h3>
           <p class="form__row form__row--email">
-            <label class="form__label form__label--input" for="email-id">E-mail:<sub>*</sub></label>
+            <label class="form__label form__label--input" for="email-id">E-mail:*</label>
             <input class="form__field" type="email" name="email" id="email-id" placeholder="kuklachev@gmail.com" required>
           </p>
           <p class="form__row form__row--phone">
-            <label class="form__label form__label--input" for="phone-id">Телефон<sub>*</sub></label>
+            <label class="form__label form__label--input" for="phone-id">Телефон*</label>
             <input class="form__field" type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90">
           </p>
         </fieldset>
@@ -97,43 +100,52 @@
           </p>
         </fieldset>
         <p class="form__row form__row--submit-group">
-          <button class="form__button btn btn--form" type="submit">Отправить заявку</button>
+          <button class="form__button btn" type="submit">Отправить заявку</button>
           <small class="form__note">* — обязательные поля</small>
         </p>
       </form>
     </section>
+    <section class="contacts contacts--form">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__wrapper">
+        <p class="contacts__slogan">Приглашаем  к сотрудничеству  дилеров!</p>
+        <p class="contacts__info">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <div class="contacts__map" id="map-id"></div>
+    </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo logo" href="#">
-        <svg class="logo__svg-title" width="128" height="24">
+      <a class="page-footer__logo" href="#">
+        <svg class="page-footer__svg" width="128" height="24">
         </svg>
       </a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__svg social__svg--vk" width="22" height="12">
-            </svg>ВКонтакте
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__svg social__svg--insta" width="16" height="16">
-            </svg>Инстаграм
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">
-            <svg class="social__svg social__svg--facebook" width="12" height="20">
-            </svg>Фейсбук
-          </a>
-        </li>
-      </ul>
+      <div class="page-footer__social-wrapper">
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__svg social__svg--vk" width="22" height="12">
+              </svg>ВКонтакте
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__svg social__svg--insta" width="16" height="16">
+              </svg>Инстаграм
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <svg class="social__svg social__svg--facebook" width="12" height="20">
+              </svg>Фейсбук
+            </a>
+          </li>
+        </ul>
+      </div>
       <p class="page-footer__copyright copyright">
         <span class="copyright__author">HTML Academy</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__svg" width="27" height="34">
-          </svg>
+          <svg class="copyright__svg" width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
         </a>
       </p>
     </div>

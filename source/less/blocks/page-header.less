@@ -1,0 +1,61 @@
+.page-header__content {
+  padding-top: 28px;
+  padding-bottom: 22px;
+
+  font-family: @second-font;
+  color: @base-black-text-color;
+
+  &--page-header__content--index-page {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.page-header__inner {
+  min-height: 305px;
+  padding-top: 28px;
+
+  text-align: center;
+  color: @white;
+  background-color: @btn-green;
+  background-image: url(../img/index-background-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.page-header__promo {
+  display: flex;
+  flex-direction: column;
+
+  width: 280px;
+  margin: 0 auto;
+  margin-top: -130px;
+}
+
+.page-header__title {
+  width: 280px;
+  .block-reset();
+  margin: 0 auto;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+
+  &--index-page {
+    margin-bottom: 25px;
+    line-height: 36px;
+  }
+}
+
+.page-header__slogan {
+  .block-reset();
+
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.page-header__button {
+  margin-top: auto;
+}

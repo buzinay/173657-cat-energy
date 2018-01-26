@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: @back-grey;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 128px;
+
+  .list-reset();
+}
+
+.social__link {
+  display: flex;
+  width: 25px;
+  height: 20px;
+  font-size: 0;
+}
+
+.social__svg {
+  margin: auto;
+}
+
+.social__link:active .social__svg {
+  opacity: 0.3;
+}
