@@ -28,3 +28,54 @@
     background-color: @back-grey;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .btn {
+    &--index-page {
+      width: 246px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &--catalog {
+      width: 250px;
+    }
+
+    &--all {
+      width: 250px;
+    }
+
+    &--additional {
+      width: 633px;
+    }
+
+    &--submit {
+      margin-left: 0;
+      margin-right: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .btn {
+    &--catalog {
+      width: 168px;
+    }
+
+    &--all {
+      width: 168px;
+    }
+
+    &--additional {
+      width: 245px;
+      margin-right: 0;
+    }
+
+    &--submit {
+      width: 568px;
+      margin-right: 80px;
+    }
+  }
+}

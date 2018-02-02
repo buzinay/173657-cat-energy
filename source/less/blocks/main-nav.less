@@ -8,3 +8,36 @@
   padding-right: 20px;
   border-bottom: 1px solid @border-color;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__logo-wrapper {
+    justify-content: flex-start;
+    width: 175px;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: none;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    width: 440px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__logo-wrapper {
+    width: 202px;
+  }
+
+  .main-nav__list {
+    width: 480px;
+  }
+}

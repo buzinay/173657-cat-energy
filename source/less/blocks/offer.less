@@ -1,13 +1,8 @@
-.offer {
-  margin-bottom: 35px;
-}
-
 .offer__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
   min-height: 175px;
 
   margin: 0 auto;
@@ -28,4 +23,35 @@
   line-height: 20px;
   color: @white;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .offer__wrapper {
+    flex-direction: row;
+
+    padding: 0;
+    padding-left: 90px;
+    padding-right: 124px;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .offer__slogan {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .offer__wrapper {
+    flex-direction: column;
+    align-items: center;
+    min-height: 180px;
+    width: 245px;
+    padding: 64px 0 50px;
+  }
+
+  .offer__slogan {
+    text-align: center;
+  }
 }
