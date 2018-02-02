@@ -39,3 +39,48 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    padding-top: 67px;
+  }
+
+  .contacts__wrapper {
+    justify-content: space-between;
+    width: 708px;
+    margin-bottom: 65px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .contacts__slogan {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__info {
+    width: 165px;
+    font-size: 16px;
+  }
+
+  .contacts__map {
+    min-height: 395px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    position: relative;
+    padding-top: 0;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    top: 96px;
+    right: 50%;
+    width: 410px;
+    padding: 68px 80px;
+
+    background-color: @white;
+  }
+}

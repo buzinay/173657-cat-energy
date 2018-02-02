@@ -1,9 +1,9 @@
+.catalog {
+  margin-bottom: 40px;
+}
+
 .catalog__list {
   .list-reset();
-
-  &--additional {
-    .container();
-  }
 }
 
 .catalog__item {
@@ -33,16 +33,6 @@
   width: 140px;
 }
 
-.catalog__table {
-  width: 100%;
-  border: 0;
-  border-collapse: collapse;
-
-  &--additional {
-    margin-bottom: 10px;
-  }
-}
-
 .catalog__title {
   width: 75px;
   .block-reset();
@@ -57,8 +47,14 @@
   text-transform: uppercase;
 
   &--wide {
-    width: 100%;
+    width: auto;
   }
+}
+
+.catalog__table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
 }
 
 .catalog__row {
@@ -80,19 +76,82 @@
   line-height: 16px;
 }
 
-.catalog__additional--wrapper {
-  .container();
+@media (min-width: @tablet-width) {
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  .catalog__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 324px;
+    //min-height: 480px;
+    margin-bottom: 35px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    background-color: @back-grey;
+    border-bottom: 0;
+
+    &--last {
+      background-color: @white;
+      border: 1px solid @border-color;
+    }
+  }
+
+  .catalog__details {
+    flex-direction: column;
+    width: 250px;
+
+    margin-bottom: 35px;
+  }
+
+  .catalog__link {
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .catalog__wrapper {
+    width: auto;
+  }
+
+  .catalog__title {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .catalog__row {
+    margin-bottom: 0;
+
+    font-size: 16px;
+    border-bottom: 1px solid @border-color;
+  }
+
+  .catalog__field,
+  .catalog__value {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 
-.catalog__caption {
-  .block-reset();
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    width: 1220px;
+  }
 
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  font-family: @second-font;
-  color: @base-black-text-color;
-  border-bottom: 1px solid @border-color;
+  .catalog__item {
+    width: 245px;
+  }
+
+  .catalog__details {
+    width: 168px;
+  }
 }
