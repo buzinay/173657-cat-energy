@@ -1,9 +1,37 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: @base-text-color;
+
+  &:hover,
+  &:focus {
+    color: @btn-green;
+  }
+
+  &:active {
+    color: @btn-green;
+    opacity: 0.3;
+  }
+}
+
 .copyright__author {
   font-size: 16px;
   line-height: 16px;
 }
 
-.copyright__link {
-  width: 27px;
-  height: 34px;
+.copyright__svg {
+  width: 40px;
+  height: 47px;
+  fill: @social-color;
+}
+
+.copyright__link:hover .copyright__svg,
+.copyright__link:focus .copyright__svg {
+    fill: @btn-green;
+}
+
+.copyright__link:active .copyright__svg {
+    fill: @btn-green;
+    opacity: 0.3;
 }

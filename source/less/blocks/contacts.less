@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 30px;
+  padding-top: 28px;
 
   &--catalog,
   &--form {
@@ -11,7 +11,7 @@
   display: flex;
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 }
 
 .contacts__slogan {
@@ -47,10 +47,8 @@
 
   .contacts__wrapper {
     justify-content: space-between;
-    width: 708px;
+    width: 628px;
     margin-bottom: 65px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 
   .contacts__slogan {
@@ -61,6 +59,12 @@
   .contacts__info {
     width: 165px;
     font-size: 16px;
+    text-align: right;
+  }
+
+  .contacts__info span {
+    display: block;
+    margin-top: 20px;
   }
 
   .contacts__map {
@@ -77,10 +81,15 @@
   .contacts__wrapper {
     position: absolute;
     top: 96px;
-    right: 50%;
-    width: 410px;
-    padding: 68px 80px;
+    right: ~"calc(50% + 40px)";
+    width: 420px;
+    margin-bottom: 0;
+    padding: 65px 75px 55px;
 
     background-color: @white;
+  }
+
+  .contacts__info {
+    text-align: left;
   }
 }

@@ -16,8 +16,8 @@
 .site-list__link {
   display: block;
 
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 23px;
+  padding-bottom: 22px;
 
   color: @base-black-text-color;
 }
@@ -25,7 +25,9 @@
 @media (min-width: @tablet-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    padding-top: 15px;
+    padding-bottom: 14px;
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
@@ -33,10 +35,47 @@
 
   .site-list__item {
     border-bottom: none;
+    margin-left: 36px;
+  }
+
+  .site-list__link {
+    display: block;
+
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    &[href]:hover,
+    &[href]:focus {
+      opacity: 0.6;
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: @btn-green;
+      }
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
+  .site-list {
+    padding-top: 11px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
   .site-list__link {
     &--index-page {
       color: @white;
