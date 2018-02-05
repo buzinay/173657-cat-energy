@@ -29,7 +29,7 @@
   }
 
   &--message,
-  &--check-group  {
+  &--check-group {
     margin-top: 20px;
   }
 }
@@ -463,12 +463,6 @@
     margin-bottom: 9px;
   }
 
-  .form__fieldset--check-group .form__row {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   .form__row-group {
     &--contacts {
       display: flex;
@@ -483,6 +477,10 @@
   .form__fieldset--check-group .form__row {
     width: 245px;
     margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .form__row {
