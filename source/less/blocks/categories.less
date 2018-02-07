@@ -5,10 +5,14 @@
 
 .categories__item {
   position: relative;
-  margin-bottom: 20px;
-  padding: 40px 20px 20px;
+  margin-bottom: 22px;
+  padding: 20px;
 
   background-color: @back-grey;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &::before {
     content: "";
@@ -58,7 +62,8 @@
 
 .categories__title {
   .block-reset();
-  margin-bottom: 30px;
+  margin-bottom: 28px;
+  padding-top: 10px;
   padding-left: 70px;
 
   font-size: 24px;
@@ -72,24 +77,49 @@
 .categories__description {
   .block-reset();
   margin-bottom: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 
   border-bottom: 1px solid @border-color;
 }
 
 .categories__link {
+  display: flex;
+  width: 135px;
+
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   font-family: @second-font;
   text-transform: uppercase;
   color: @base-black-text-color;
+
+  &::after {
+    content: '';
+    width: 35px;
+    height: auto;
+    margin-left: 10px;
+    background-image: url("../img/bg-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: 24px 11px;
+    background-position: left center;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-image: url("../img/bg-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-size: 33px 11px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .categories__item {
     margin-bottom: 30px;
-    padding: 80px 285px 60px 53px;
+    padding: 78px 280px 60px 53px;
 
     &:last-child {
       margin-bottom: 0;
@@ -131,14 +161,15 @@
   }
 
   .categories__title {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
+    padding-top: 0;
     padding-left: 0;
     font-size: 36px;
     line-height: 37px;
   }
 
   .categories__description {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
     padding-bottom: 0;
     font-size: 16px;
     line-height: 24px;
@@ -147,8 +178,13 @@
   }
 
   .categories__link {
+    width: 180px;
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      margin-left: 22px;
+    }
   }
 }
 
@@ -160,7 +196,7 @@
 
   .categories__item {
     width: 466px;
-    padding: 80px 52px 60px;
+    padding: 78px 52px 58px;
     margin-bottom: 0;
 
     &::before {
@@ -197,11 +233,11 @@
   }
 
   .categories__title {
-    margin-bottom: 75px;
+    margin-bottom: 72px;
     padding-left: 164px;
   }
 
   .categories__description {
-    margin-bottom: 36px;
+    margin-bottom: 33px;
   }
 }
