@@ -47,6 +47,11 @@
   }
 }
 
+.advantages__item p{
+  max-width: 100%;
+  .block-reset();
+}
+
 .advantages__item--powder {
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
@@ -138,10 +143,6 @@
       counter-increment: flag;
       z-index: -1;
     }
-  }
-  .advantages__item p{
-    max-width: 100%;
-    .block-reset();
   }
 }
 
