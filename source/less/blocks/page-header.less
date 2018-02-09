@@ -135,20 +135,20 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
+    width: 1440px;
+    margin: 0 auto;
     padding-top: 55px;
 
     &--index-page {
       margin-bottom: 80px;
       padding-bottom: 55px;
-      background-image: linear-gradient(to right, @white 0%, @back-green 0%, @back-green 100%);
-      background-position: ~"calc(50% + 380px)" top;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-      background-position: ~"calc(50% + 380px)" top;
+      background-image: url(../img/index-background-desktop@1x.jpg), linear-gradient(to right, #ffffff 0%, #ffffff 53%, #65a93c 53%, #65a93c 100%);
+      background-position: ~"calc(50% + 380px)" top, left center;
+      background-repeat: no-repeat, no-repeat;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 680px 696px;
+        background-image: url(../img/index-background-desktop@2x.jpg), linear-gradient(to right, #ffffff 0%, #ffffff 53%, #65a93c 53%, #65a93c 100%);
+        background-size: 680px 696px, auto;
       }
     }
   }
@@ -156,6 +156,7 @@
   .page-header__nav {
     width: 1220px;
     margin-bottom: 35px;
+
     &--index-page {
       margin-bottom: 20px;
     }
