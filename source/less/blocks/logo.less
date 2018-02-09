@@ -1,3 +1,26 @@
-.logo {
+.logo__image {
   display: block;
+  width: 33px;
+  height: 38px;
+  margin-right: 55px;
+}
+
+@media (min-width: @tablet-width) {
+  .logo__image {
+    width: 173px;
+    height: 58px;
+    margin-right: 0;
+  }
+
+  .logo__title {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .logo__image {
+    width: 202px;
+    height: 59px;
+    margin-bottom: 7px;
+  }
 }

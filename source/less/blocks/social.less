@@ -1,9 +1,9 @@
 .social {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 132px;
+  width: 168px;
   .list-reset();
   margin: 0 auto;
 }
@@ -53,6 +53,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .social {
+    width: auto;
+  }
+
   .social__link {
     width: 30px;
     height: 28px;

@@ -49,15 +49,28 @@
     min-height: 150px;
   }
 
+  .page-footer__logo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   .page-footer__social-wrapper {
-    width: 140px;
+    width: 155px;
     border-top: none;
     border-bottom: none;
+    margin-left: 27px;
     padding: 0;
   }
 
   .page-footer__copyright {
     width: 165px;
+    margin-top: 14px;
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__copyright {
+    margin-top: 0;
   }
 }

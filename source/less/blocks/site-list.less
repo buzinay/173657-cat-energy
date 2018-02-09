@@ -76,9 +76,17 @@
     line-height: 25px;
   }
 
+  .site-list__item {
+    margin-left: 34px;
+  }
+
   .site-list__link {
     &--index-page {
       color: @white;
     }
+  }
+
+  .site-list__link--active.site-list__link--index-page::after {
+    background-color: @white;
   }
 }
