@@ -89,9 +89,9 @@
   .case {
     padding-top: 46px;
     padding-bottom: 65px;
-    background-color: @white;
+  //  background-color: @white;
     border-top: 1px solid @border-color;
-    background: linear-gradient(to bottom, @white 0%, @white 57%, @back-grey 57%, @back-grey 100%);
+    background: linear-gradient(to bottom, @white 0%, @white 57%, @back-grey 57%, @back-grey 100%),  @white;
   }
 
   .case__container {
@@ -170,8 +170,7 @@
     padding-top: 15px;
     padding-bottom: 65px;
     border-top: none;
-    background: none;
-    background: linear-gradient(to bottom, @white 0%, @white 30%, @back-grey 30%, @back-grey 100%);
+    background: linear-gradient(to bottom, @white 0%, @white 30%, @back-grey 30%, @back-grey 100%), @back-grey;
   }
 
   .case__wrapper {
