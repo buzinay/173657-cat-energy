@@ -11,7 +11,6 @@
 
 .main-nav__logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   width: 191px;
@@ -83,6 +82,11 @@
     border-bottom: none;
   }
 
+  .main-nav__logo {
+    width: 175px;
+    height: 58px;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -95,6 +99,11 @@
 @media (min-width: @desktop-width) {
   .main-nav__logo-wrapper {
     width: 202px;
+  }
+
+  .main-nav__logo {
+    width: 202px;
+    height: 66px;
   }
 
   .main-nav__list {
