@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
+    <script>
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.min.js" async></script>
     <title>Кэт-энерджи. Подбор программы</title>
   </head>
   <body>
     <header class="page-header">
-      <nav class="page-header__nav main-nav main-nav--closed">
+      <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__logo-wrapper">
           <a class="main-nav__logo logo" href="index.html">Логотип "Кэт энерджи"
             <picture>
@@ -107,7 +111,7 @@
                   <label class="form__label" for="sweetener-id">Сахарозаменитель</label>
                 </p>
                 <p class="form__row">
-                  <input class="form__checkbox" type="checkbox" name="water" id="water-id">
+                  <input class="form__checkbox" type="checkbox" name="water" id="water-id" disabled>
                   <label class="form__label" for="water-id">Питьевая вода</label>
                 </p>
                 <p class="form__row">

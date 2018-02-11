@@ -178,10 +178,6 @@
 
   cursor: pointer;
 
-  &:active {
-    opacity: 0.3;
-  }
-
   &::before {
     content: "";
 
@@ -196,11 +192,6 @@
 
   &:hover::before {
     border-color: @border-color;
-  }
-
-  &:active::before,
-  &:active::after {
-    opacity: 0.3;
   }
 }
 
@@ -228,6 +219,17 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px 20px;
+  }
+}
+
+.form__checkbox:disabled + .form__label,
+.form__radio:disabled + .form__label {
+  opacity: 0.3;
+  cursor: auto;
+
+  &::before,
+  &::after {
+    opacity: 0.3;
   }
 }
 
