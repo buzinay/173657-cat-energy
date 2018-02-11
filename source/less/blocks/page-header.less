@@ -34,7 +34,7 @@
   display: flex;
   flex-direction: column;
 
-  min-height: 354px;
+  height: 354px;
   margin: 0 auto;
   background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
@@ -61,7 +61,6 @@
 
 .page-header__slogan {
   .block-reset();
-  //margin-bottom: 28px;
 
   font-size: 14px;
   line-height: 14px;
@@ -134,8 +133,6 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    width: 1440px;
-    margin: 0 auto;
     padding-top: 55px;
 
     &--index-page {
@@ -188,6 +185,7 @@
   .page-header__promo {
     padding-left: 80px;
     background-image: none;
+    height: auto;
     min-height: auto;
   }
 

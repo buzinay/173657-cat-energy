@@ -28,8 +28,8 @@ function init () {
   },{
       iconLayout: 'default#image',
       iconImageHref: 'img/map-pin.png',
-      iconImageSize: [55, 53],
-      iconImageOffset: [-27, -26]
+      iconImageSize: [62, 53],
+      iconImageOffset: [-31, -26]
     });
 
     myMap.geoObjects.add(myPlacemark);
