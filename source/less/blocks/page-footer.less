@@ -31,7 +31,7 @@
 
 .page-footer__social-wrapper {
   width: 100%;
-  padding: 20px 0 10px;
+  padding: 22px 0 10px;
   border-top: 1px solid @border-color;
   border-bottom: 1px solid @border-color;
 }
@@ -39,14 +39,15 @@
 .page-footer__copyright {
   width: 100%;
   .block-reset();
-  padding: 16px 0;
+  padding: 14px 0;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
-    min-height: 150px;
+    padding-top: 45px;
+    padding-bottom: 44px;
   }
 
   .page-footer__logo {
@@ -70,6 +71,11 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    padding-top: 50px;
+    padding-bottom: 53px;
+  }
+
   .page-footer__copyright {
     margin-top: 0;
   }
