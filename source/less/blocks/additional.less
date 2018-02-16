@@ -17,7 +17,6 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  font-family: @second-font;
   color: @base-black-text-color;
   background-color: @white;
 
@@ -46,7 +45,6 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  font-family: @second-font;
   color: @base-darkgrey-text-color;
   text-transform: uppercase;
 }
@@ -60,8 +58,13 @@
 
 .additional__row {
   margin-bottom: 5px;
+
   font-size: 14px;
   line-height: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: @second-font;
+  color: @base-text-color;
 }
 
 .additional__field {
@@ -88,11 +91,11 @@
     padding-right: 35px;
     font-size: 36px;
     line-height: 36px;
-    transform: translate(0, -22px);
+    transform: translate(2px, -24px);
   }
 
   .additional__list {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
   }
 
   .additional__item {
@@ -100,7 +103,7 @@
     flex-direction: column;
     height: 84px;
     justify-content: space-between;
-    padding: 27px 36px;
+    padding: 26px 37px 28px 38px;
     border-left: 1px solid @border-color;
     border-right: 1px solid @border-color;
   }
@@ -118,7 +121,7 @@
 
   .additional__table {
     width: 290px;
-    margin-bottom: 0;
+    margin-bottom: -2px;
   }
 
   .additional__row {
@@ -145,7 +148,7 @@
 
 @media (min-width: @desktop-width) {
   .additional {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 
   .additional__caption {
@@ -168,7 +171,7 @@
     flex-direction: row;
     align-items: center;
     height: 40px;
-    padding: 16px 0 15px;
+    padding: 15px 0 16px;
 
     border-left: none;
     border-right: none;
@@ -176,17 +179,25 @@
 
   .additional__details {
     width: 610px;
+    margin-top: 3px;
   }
 
   .additional__title {
-    width: 285px;
+    width: 324px;
+    flex-shrink: 0;
+    padding-left: 1px;
   }
 
   .additional__table {
-    width: 285px;
+    width: 325px;
   }
 
   .additional__field {
+    text-align: left;
+  }
+
+  .additional__value {
+    width: 80px;
     text-align: left;
   }
 }

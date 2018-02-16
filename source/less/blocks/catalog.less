@@ -21,12 +21,12 @@
 .catalog__details {
   display: flex;
 
-  width: 280px;
+  width: @mobile-container;
   margin: 0 auto;
 
   &--self {
     flex-direction: column;
-    padding-top: 81px;
+    padding-top: 65px;
     text-align: center;
 
     background-image: url("../img/bg-plus-mobile.svg");
@@ -49,7 +49,6 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  font-family: @second-font;
   color: @base-black-text-color;
   text-transform: uppercase;
 
@@ -69,8 +68,13 @@
 
 .catalog__row {
   margin-bottom: 5px;
+
   font-size: 12px;
   line-height: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: @second-font;
+  color: @base-text-color;
 }
 
 .catalog__field {
@@ -84,6 +88,7 @@
 .catalog__slogan {
   .block-reset();
   margin-bottom: 20px;
+  font-family: @second-font;
   font-size: 12px;
   line-height: 16px;
 }
@@ -97,7 +102,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 708px;
+    width: @tablet-container;
     margin: 0 auto;
   }
 
@@ -108,7 +113,7 @@
     width: 324px;
     margin-top: 0;
     min-height: 475px;
-    margin-bottom: 30px;
+    margin-bottom: 30.5px;
     padding-top: 25px;
     padding-bottom: 40px;
     background: linear-gradient(to bottom, @white 0%, @white 20%, @back-grey 20%, @back-grey 100%), @back-grey;
@@ -118,9 +123,10 @@
     &--last {
       align-self: flex-end;
       justify-content: center;
-      min-height: 370px;
-      padding-top: 26px;
-      padding-bottom: 34px;
+      width: 322px;
+      min-height: 390px;
+      padding-top: 0;
+      padding-bottom: 39px;
       background: @white;
       border: 1px solid @border-color;
     }
@@ -134,16 +140,16 @@
 
     &--self {
       margin-bottom: auto;
-      padding-top: 140px;
+      padding-top: 165px;
       background-image: url("../img/bg-plus.svg");
-      background-position: center 30px;
+      background-position: center 55px;
       background-size: 60px 60px;
     }
   }
 
   .catalog__link {
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
   }
 
   .catalog__wrapper {
@@ -154,7 +160,7 @@
   .catalog__title {
     width: 150px;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
     padding: 0;
     font-size: 20px;
     text-align: center;
@@ -174,13 +180,13 @@
   .catalog__field,
   .catalog__value {
     padding-top: 8px;
-    padding-bottom: 8px;
+    padding-bottom: 7px;
   }
 
   .catalog__slogan {
     width: 175px;
     align-self: center;
-    margin-bottom: 89px;
+    margin-bottom: 84px;
     font-size: 16px;
     line-height: 18px;
   }
@@ -197,6 +203,15 @@
 
   .catalog__item {
     width: 245px;
+    margin-bottom: 33px;
+
+    &--last {
+      width: 243px;
+      height: 390px;
+    }
+  }
+
+  .catalog__details {
     margin-bottom: 32px;
   }
 

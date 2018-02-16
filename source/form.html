@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="fonts/oswaldregular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
+    <link href="fonts/oswaldmedium.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
     <script>
       document.createElement( "picture" );
     </script>
     <script src="js/picturefill.min.js" async></script>
+
     <title>Кэт-энерджи. Подбор программы</title>
   </head>
   <body>
@@ -51,15 +54,15 @@
           <div class="form__fieldset-wrapper form__fieldset-wrapper--self">
             <fieldset class="form__fieldset form__fieldset--cat-info">
               <p class="form__row">
-                <label class="form__label form__label--input" for="nickname-id">Имя:*</label>
+                <label class="form__label form__label--name" for="nickname-id">Имя:*</label>
                 <input class = "form__field" type="text" name="nickname" id="nickname-id" placeholder="Барсик" required>
               </p>
               <p class="form__row">
-                <label class="form__label form__label--input" for="weight-id">Вес (кг):*</label>
+                <label class="form__label form__label--weight" for="weight-id">Вес (кг):*</label>
                 <input class = "form__field" type="text" name="weight" id="weight-id" placeholder="7">
               </p>
               <p class="form__row">
-                <label class="form__label form__label--input" for="age-id">Возраст&nbsp;(лет):</label>
+                <label class="form__label form__label--age" for="age-id">Возраст&nbsp;(лет):</label>
                 <input class = "form__field" type="text" name="age" id="age-id" placeholder="7">
               </p>
             </fieldset>
@@ -83,7 +86,7 @@
               <h3 class="form__legend form__legend--contacts">Контактные данные (владельца кота)</h3>
               <div class="form__row-group form__row-group--contacts">
                 <p class="form__row form__row--email">
-                  <label class="form__label form__label--input" for="email-id">E-mail:*</label>
+                  <label class="form__label form__label--mail" for="email-id">E-mail:*</label>
                   <input class="form__field form__field--decorated" type="email" name="email" id="email-id" placeholder="kuklachev@gmail.com" required>
                   <span class="form__icon">
                     <svg class="form__svg" width="17" height="13">
@@ -92,7 +95,7 @@
                   </span>
                 </p>
                 <p class="form__row form__row--phone">
-                  <label class="form__label form__label--input" for="phone-id">Телефон:*</label>
+                  <label class="form__label form__label--phone" for="phone-id">Телефон:*</label>
                   <input class="form__field form__field--decorated" type="tel" name="phone" id="phone-id" placeholder="8 (960) 900-60-90">
                   <span class="form__icon">
                     <svg class="form__svg" width="20" height="20">
