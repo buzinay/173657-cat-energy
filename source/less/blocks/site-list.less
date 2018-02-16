@@ -1,7 +1,6 @@
 .site-list {
   .list-reset();
 
-  font-family: @second-font;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -11,6 +10,11 @@
 
 .site-list__item {
   border-bottom: 1px solid @border-color;
+
+  &:first-child {
+    margin-top: -1px;
+    border-top: 1px solid @border-color;
+  }
 }
 
 .site-list__link {
@@ -26,6 +30,7 @@
   .site-list {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     padding-top: 15px;
     padding-bottom: 14px;
     font-size: 18px;
@@ -36,6 +41,11 @@
   .site-list__item {
     border-bottom: none;
     margin-left: 36px;
+
+    &:first-child {
+      margin-top: 0;
+      border-top: none;
+    }
   }
 
   .site-list__link {

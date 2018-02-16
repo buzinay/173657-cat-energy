@@ -16,13 +16,19 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  font-family: @second-font;
   color: @base-black-text-color;
 }
 
 .case__description {
   .block-reset();
   width: 270px;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: @second-font;
+  color: @base-text-color;
+
 }
 
 .case__item-wrapper {
@@ -44,7 +50,6 @@
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  font-family: @second-font;
   color: @base-black-text-color;
   text-transform: uppercase;
   text-align: center;
@@ -63,6 +68,10 @@
 
   font-size: 12px;
   line-height: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: @second-font;
+  color: @base-text-color;
   text-align: center;
 
   background-color: @back-grey;
@@ -74,27 +83,26 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  font-family: @second-font;
   color: @base-black-text-color;
   text-align: center;
   text-transform: uppercase;
 }
 
 .case__slider {
-  width: 320px;
+  width: @mobile-width;
   margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .case {
     padding-top: 46px;
-    padding-bottom: 65px;
+    padding-bottom: 66px;
     border-top: 1px solid @border-color;
     background: linear-gradient(to bottom, @white 0%, @white 57%, @back-grey 57%, @back-grey 100%), @white;
   }
 
   .case__container {
-    width: 708px;
+    width: @tablet-container;
     margin-bottom: 70px;
   }
 
@@ -169,14 +177,14 @@
     padding-top: 15px;
     padding-bottom: 65px;
     border-top: none;
-    background: linear-gradient(to bottom, @white 0%, @white 30%, @back-grey 30%, @back-grey 100%), @back-grey;
+    background: linear-gradient(to bottom, @white 0%, @white 31%, @back-grey 31%, @back-grey 100%), @back-grey;
   }
 
   .case__wrapper {
     display: flex;
     justify-content: space-between;
 
-    width: 1220px;
+    width: @desktop-container;
     margin: 0 auto;
     padding-bottom: 0;
   }

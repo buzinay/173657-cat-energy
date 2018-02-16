@@ -10,7 +10,6 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  font-family: @second-font;
   color: @base-black-text-color;
 }
 
@@ -22,6 +21,13 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: @second-font;
+  color: @base-text-color;
 
   &:last-child {
     margin-bottom: 0;
@@ -134,14 +140,22 @@
       position: absolute;
       top: -30px;
       right: 0;
+      font-family: @base-font;
       font-size: 281px;
       line-height: 281px;
       font-weight: 400;
-      font-family: @second-font;
       color: @back-grey;
 
       counter-increment: flag;
       z-index: -1;
+    }
+
+    &--leaf::after {
+      right: 10px;
+    }
+
+    &--clock::after {
+      right: -6px;
     }
   }
 }

@@ -1,15 +1,14 @@
 .page-header__content {
   .container();
   padding-top: 18px;
-  padding-bottom: 26px;
+  padding-bottom: 27px;
 
-  font-family: @second-font;
   color: @base-black-text-color;
 
   &--index-page {
     width: 320px;
     min-height: 305px;
-    padding-top: 30px;
+    padding-top: 31px;
     padding-bottom: 24px;
 
     text-align: center;
@@ -77,7 +76,7 @@
   }
 
   .page-header__nav {
-    width: 708px;
+    width: @tablet-container;
     margin: 0 auto;
   }
 
@@ -86,7 +85,7 @@
     padding-bottom: 55px;
 
     &--index-page {
-      width: 708px;
+      width: @tablet-container;
       padding-bottom: 0;
 
       text-align: left;
@@ -136,25 +135,22 @@
     padding-top: 55px;
 
     &--index-page {
-      margin-bottom: 80px;
+      margin-bottom: 26px;
       padding-bottom: 55px;
       background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, #ffffff 0%, #ffffff 53%, #65a93c 53%, #65a93c 100%);
-      background-position: ~"calc(50% + 380px)" top, left center;
+      background-position: ~"calc(50% + 380px)" top, left top;
       background-repeat: no-repeat, no-repeat;
+      background-size: 680px 696px, 100% 696px ;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
         background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, #ffffff 0%, #ffffff 53%, #65a93c 53%, #65a93c 100%);
-        background-size: 680px 696px, auto;
-      }
-
-      &--form-page {
-        padding-bottom: 53px;
+        background-size: 680px 696px, 100%  696px;
       }
     }
   }
 
   .page-header__nav {
-    width: 1220px;
+    width: @desktop-container;
     margin-bottom: 35px;
 
     &--index-page {
@@ -164,9 +160,10 @@
 
   .page-header__content {
     padding-top: 35px;
+    padding-bottom: 53px;
 
     &--index-page {
-      width: 1220px;
+      width: @desktop-container;
       min-height: 415px;
       padding-top: 85px;
       background-image: url("../img/index-can-desktop@1x.png");
@@ -179,6 +176,7 @@
       }
     }
   }
+
 
   .page-header__title {
     &--index-page {
