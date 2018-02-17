@@ -86,7 +86,7 @@
 
   &--mail,
   &--phone {
-    margin-right: 11px;
+    margin-right: 10px;
   }
 }
 
@@ -123,7 +123,7 @@
 .form__textarea {
   width: 100%;
   min-height: 148px;
-  padding: 13px 14px;
+  padding: 12px 13px;
 }
 
 .form__field {
@@ -306,7 +306,7 @@
     }
 
     &--cat-info {
-      margin-bottom: 70px;
+      margin-bottom: 72px;
     }
 
     &--check-group {
@@ -337,8 +337,10 @@
     &--submit-group {
       flex-direction: row;
       justify-content: flex-start;
-      margin-top: 0;
-      padding: 0 70px;
+      width: @tablet-container;
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 0 40px;
     }
   }
 
@@ -458,7 +460,7 @@
 
 @media (min-width: @desktop-width) {
   .form__fieldset-wrapper {
-    width: 1220px;
+    width: @desktop-container;
     margin: 0 auto;
     padding: 35px 0;
 
@@ -493,11 +495,11 @@
     }
 
     &--radio-group {
-      width: 510px;
+      width: 514px;
       margin-left: 0;
       margin-right: 0;
-      padding-left: 30px;
-      padding-right: 30px;
+      padding-left: 28px;
+      padding-right: 28px;
     }
   }
 
@@ -536,8 +538,9 @@
     }
 
     &--submit-group {
-      width: 1220px;
-      margin: 0 auto;
+      width: @desktop-container;
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 

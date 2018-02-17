@@ -8,7 +8,7 @@
   &--index-page {
     width: 320px;
     min-height: 305px;
-    padding-top: 31px;
+    padding-top: 29px;
     padding-bottom: 24px;
 
     text-align: center;
@@ -53,7 +53,7 @@
   font-weight: 400;
 
   &--index-page {
-    margin-bottom: 24px;
+    margin-bottom: 26px;
     line-height: 36px;
   }
 }
@@ -81,7 +81,7 @@
   }
 
   .page-header__content {
-    padding-top: 52px;
+    padding-top: 50px;
     padding-bottom: 55px;
 
     &--index-page {
@@ -92,11 +92,15 @@
       color: @base-black-text-color;
       background: none;
     }
+
+    &--catalog-page {
+      padding-bottom: 57px;
+    }
   }
 
   .page-header__promo {
     padding-left: 88px;
-    min-height: 648px;
+    min-height: 650px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: center bottom;
 
@@ -118,7 +122,7 @@
   }
 
   .page-header__slogan {
-    margin-bottom: 42px;
+    margin-bottom: 44px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -135,15 +139,15 @@
     padding-top: 55px;
 
     &--index-page {
-      margin-bottom: 26px;
-      padding-bottom: 55px;
+      margin-bottom: 80px;
+      //padding-bottom: 55px;
       background-image: url("../img/index-background-desktop@1x.jpg"), linear-gradient(to right, @white 0%, @white 53%, @back-green 53%, @back-green 100%);
       background-position: ~"calc(50% + 380px)" top, left top;
       background-repeat: no-repeat, no-repeat;
       background-size: 680px 696px, 100% 696px;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, @white 0%, @white 53%, #65a93c 53%, #65a93c 100%);
+        background-image: url("../img/index-background-desktop@2x.jpg"), linear-gradient(to right, @white 0%, @white 53%, @back-green 53%, @back-green 100%);
         background-size: 680px 696px, 100% 696px;
       }
     }
@@ -164,8 +168,9 @@
 
     &--index-page {
       width: @desktop-container;
-      min-height: 415px;
-      padding-top: 85px;
+      min-height: 473px;
+      padding-top: 82px;
+      padding-bottom: 0;
       background-image: url("../img/index-can-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: 452px top;
@@ -174,6 +179,11 @@
         background-image: url("../img/index-can-desktop@2x.png");
         background-size: 552px 500px;
       }
+    }
+
+    &--catalog-page {
+      padding-top: 33px;
+      padding-bottom: 55px;
     }
   }
 
@@ -192,6 +202,6 @@
   }
 
   .page-header__slogan {
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 }
