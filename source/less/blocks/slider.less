@@ -4,19 +4,29 @@
 
 .slider__slides {
   .block-reset();
+  position: relative;
+  min-height: 240px;
   margin-bottom: 32px;
 }
 
 .slider__item {
-  display: none;
+  position: absolute;
+  //display: none;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 1s ease-out;
 }
 
 .slider__toggle--before:checked ~ .slider__slides .slider__item--before {
-  display: block;
+  //display: block;
+  z-index: 1;
+  opacity: 1;
 }
 
 .slider__toggle--after:checked ~ .slider__slides .slider__item--after {
-  display: block;
+  //display: block;
+  z-index: 1;
+  opacity: 1;
 }
 
 .slider__control-wrapper {
